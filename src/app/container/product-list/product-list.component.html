@@ -1,0 +1,18 @@
+<app-filter 
+[all]="totalProduct" 
+[inSocket]="totalProductInStock" 
+[outOfSocket]="totalPrductISNotInStock"
+(selectedRadioButtonChanged)="onFilterPRoduct($event)"
+></app-filter>
+<div class="product">
+    <div  class="inline"
+     *ngFor="let prod of products" 
+     (click)="selectedProduct = prod ; showDetails();"
+     >
+        <!-- *ngIf="searchText === '' || prod.category.toLowerCase().includes(searchText)" :: for search without search button -->
+        <div *ngIf="searchText === '' || prod.category.toLowerCase().includes(searchText)">
+            <app-product [product]="prod"
+            *ngIf=" selectedFilterRadioButton === 'all' || prod.in_socket.toString() === selectedFilterRadioButton"></app-product>
+        </div>
+    </div>
+</div>

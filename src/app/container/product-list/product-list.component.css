@@ -1,0 +1,32 @@
+.product{
+    width: 85%;
+    margin: 30px auto;
+}
+.product .inline{
+    display: inline-block;
+}
+.card{
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 30px;
+}
+.card .card-title{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+.card .card-text{
+    font-weight: bold;
+}
+.card .card-text-t{
+    font-weight: bold; 
+    margin-left: 10px;
+    display: inline-block;
+}
+.off{
+    text-align: center;
+    width: 50px;
+    background-color: yellow;
+}

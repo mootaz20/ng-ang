@@ -1,0 +1,16 @@
+<!-- <img [src]="product.image" width="300px" height="300px">
+<p>Name : {{product.name}} </p>
+<p>Price : ${{product.price}} </p>
+<p>Color : {{product.color}} </p>
+<p>Discount : ${{getDiscount().toFixed(1)}} </p>
+<p>{{product.insock > 0 ? 'the product is greater zero' : 'the product is not greater zero'}}</p>
+<button (click)="plus()">+</button>
+<span> {{addToCart}} </span>
+<button (click)="minus()">-</button>
+<input [value]="value" (change)="onChangeName($event)">
+<h2>the name is : {{value}} </h2> -->
+<app-search (setSearchText)="onSearchText($event)"></app-search>
+<app-product-list [searchText]="searchText" #productListComponent (dontClose)="dontCLoseTrue()"></app-product-list>
+<div *ngIf="close">
+    <app-product-details *ngIf="productListComponent.selectedProduct" (closeModal)="closeDetails()" [productListComp]="ProductListComponent"></app-product-details>
+</div>

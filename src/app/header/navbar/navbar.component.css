@@ -1,0 +1,33 @@
+/* button{
+  background-color: black;
+  color: white;
+} */
+.nav-n{
+  background-color: blanchedalmond;
+}
+.top-header{
+  width: 100%;
+  text-align: center;
+  background-color: rgb(4, 4, 102);
+  padding: 10px;
+  color: white;
+}
+h1{
+  display: inline-block;
+}
+.main-nav-n{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+i{
+  font-size: 20px;
+  margin: 0 10px;
+}
+.anchor{
+  text-decoration: none;
+  margin: 0 20px;
+  color: brown;
+  font-size: 30px;
+  font-weight: bold;
+}

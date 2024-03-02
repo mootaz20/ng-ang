@@ -1,0 +1,9 @@
+<div class="search">
+    <!-- <input type="text" class="search-text-s" [(ngModel)]="searchText" (input)="onSearchText()">
+    <button [ngClass]="{'button-search': searchText , 'button-disabled': !searchText}">Search</button> -->
+    <input class="search-text-s" #searchInput >
+    <button class="button-search" (click)="updateSearchText()">Search</button>
+</div>
+<div>
+    <h1 class="result" *ngIf="searchText != ''">The search result is : {{searchText}} </h1>
+</div>

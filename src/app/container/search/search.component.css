@@ -1,0 +1,38 @@
+.search{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0;
+    padding: 10px;
+}
+.search .search-text-s{
+    width: 400px;
+    height: 45px;
+    padding: 10px;
+    font-weight: bold;
+    border: solid 3px black;
+}
+.search .button-search{
+    margin: 0;
+    width: 80px;
+    background-color: rgb(16, 16, 168);
+    padding: 8.5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid 2px black;
+}
+.search .button-disabled{
+    margin: 0;
+    width: 80px;
+    background-color: #aaa;
+    padding: 8.5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: not-allowed;
+    border: solid 2px black;
+}
+.result{
+    width: 60%;
+    margin: 20px auto;
+    color: brown;
+}

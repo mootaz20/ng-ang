@@ -1,0 +1,10 @@
+<div class="card">
+    <img class="card-img-top" [src]="product.img" alt="Card image cap" width="100px" height="150px">
+    <div class="card-body">
+      <p class="card-title">{{product.name.slice(0,10)}} </p>
+      <p class="card-text">{{product.describtion.slice(0,10)}} </p>
+      <p class="card-text-t text-danger">{{product.price}}$ </p>
+      <span class="card-text-t off" *ngIf="product.are_discount">{{(product.price * product.off / 100).toFixed(1)}}%</span>
+      <p class="card-text-t-t text-center" [ngStyle]="{fontWeight : 'bold' , color: product.in_socket ? 'Green' : 'Red'}">{{product.in_socket ? 'Is available' : 'Is not available'}} </p>
+    </div>
+  </div>
